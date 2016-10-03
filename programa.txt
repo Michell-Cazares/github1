@@ -1,0 +1,56 @@
+SubProceso TablaConRepetir ()
+	Escribir "Ingrese un número"
+	leer n
+	Escribir "Valor inicial"
+	Leer vi
+	Escribir "Valor final"
+	Leer vf
+	a<-vi
+	Repetir
+		Escribir n " * " a " = " n*a
+		a<-a+1
+	Hasta Que a>vf
+Fin SubProceso
+
+SubProceso TablaConPara ()
+	Escribir "Ingrese un número"
+	leer n
+	Escribir "Valor inicial"
+	Leer vi
+	Escribir "Valor final"
+	Leer vf
+	a<-vi
+	Para a<-vi Hasta vf Con Paso 1 Hacer
+		Escribir n " * " a " = " n*a
+	Fin Para
+Fin SubProceso
+
+SubProceso TablaConMientras ()
+	Escribir "Ingrese un número"
+	leer n
+	Escribir "Valor inicial"
+	Leer vi
+	Escribir "Valor final"
+	Leer vf
+	a<-vi
+	Mientras a<=vf Hacer
+		Escribir n " * " a " = " n*a
+		a<-a+1
+	FinMientras
+Fin SubProceso
+
+Proceso sin_titulo
+	Escribir "Menú Principal"
+	Escribir "|1|Tabla con Mientras |2|Tabla con Repetir |3|Tabla con Para"
+	Leer resp
+	Segun resp Hacer
+		1:
+			TablaConMientras
+		2:
+			TablaConRepetir
+		3:
+			TablaConPara
+		De Otro Modo:
+			Escribir "Dato incorrecto"
+	FinSegun
+FinProceso
