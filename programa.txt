@@ -52,5 +52,6 @@ Proceso sin_titulo
 			TablaConPara
 		De Otro Modo:
 			Escribir "Dato incorrecto"
+Escribir 'lul'
 	FinSegun
 FinProceso
